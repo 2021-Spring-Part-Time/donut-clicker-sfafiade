@@ -4,10 +4,137 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/format/css/style.css" />
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li><button onclick="about(hidden-texts-container)">About Us</button></li>
+            <li><button onclick="showDev(hidden-texts-container)">The Dev</button></li>
+            <li>
+              <button>
+                <a
+                  href="https://orteil.dashnet.org/cookieclicker/"
+                  target="_blank"
+                  >Inspiration</a
+                >
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="hidden-texts-container">
+        <section class="about-us hidden-texts" hidden>
+          <h3>About Us</h3>
+          <p>
+            Avengers donuts is a tribute to my favorite superhero team in the
+            world.
+          </p>
+        </section>
+
+        <section class="dev hidden-texts" hidden>
+          <h3>The Developer</h3>
+          <p>
+            My name is Stephen Fafiade and I'm a Software Developer who loves comics .
+          </p>
+          <div class="a-container">
+            <p>
+              <button>
+              <a href="https://sfafiade.github.io/" target="_blank"
+                >Portfolio</a>
+                <a href="https://github.com/sfafiade" target="_blank">
+            </button>
+            </p>
+            <p>
+              <button>
+              <a href="https://github.com/sfafiade" target="_blank">Github</a>
+            </p>
+          </button>
+          </div>
+        </section>
+
+        <section class="hidden-texts" hidden>
+          <h3>Inspiration</h3>
+          <p>This website is inspired by the original Cookie Clicker Game</p>
+          <button>
+            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank"
+              >Inspiration</a
+            >
+          </button>
+        </section>
+      </div>
+
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <button class="make-donut side-nav__item">
+              Click to Make Donuts!
+            </button>
+            <button class="ac-btn side-nav__item" disabled>
+              Buy AutoClicker!
+            </button>
+            <button class="m-btn side-nav__item" disabled>
+              Buy Multiplier!
+            </button>
+          </ul>
+        </nav>
+
+        <main class="main-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img src="/format/img/ironman.jpg" alt="ironman eating donuts" class="gallery__photo" />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="/format/img/thor&loki.png"
+                alt="thor and loki"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img src="/format/img/spiderman.jpg" alt="spiderman eating donuts" class="gallery__photo" />
+            </figure>
+          </div>
+
+          <div class="heading">
+            <h1><span>Avengers</span>Donut Center</h1>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <div class="desc-title">Donut Count :</div>
+              <div class="donut-count">0</div>
+              <div class="cost">
+                <span>Per Click : </span>
+                <div class="donut-value">1</div>
+              </div>
+              <hr />
+              <div class="desc-title">Number of Auto Clickers :</div>
+              <div class="ac-count">0</div>
+              <div class="cost">
+                <span>Cost :</span>
+                <div class="ac-cost">100</div>
+              </div>
+              <hr />
+              <div class="desc-title">Number of Donut Multipliers :</div>
+              <div class="m-count">0</div>
+              <div class="cost">
+                <span>Cost : </span>
+                <div class="m-cost">10</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button class="reset">Reset</button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script  type = "module" src="/format/js/index.js"></script
   </body>
 </html>
